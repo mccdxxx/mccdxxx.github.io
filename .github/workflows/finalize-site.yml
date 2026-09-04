@@ -24,8 +24,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat .bootstrap/part-* > /tmp/site.b64
-          base64 --decode /tmp/site.b64 > /tmp/site.tar.xz
+          : > /tmp/site.tar.xz
+          for part in .bootstrap/part-*; do
+            base64 --decode "$part" >> /tmp/site.tar.xz
+          done
+          xz --test /tmp/site.tar.xz
           mkdir -p /tmp/site
           tar -xJf /tmp/site.tar.xz -C /tmp/site
           test -f /tmp/site/_config.yml

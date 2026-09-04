@@ -1,0 +1,211 @@
+# ARG STORY MAP
+
+Owner-only. Excluded from Jekyll.
+
+- Phase 0 / 000 — `checksum-failure` — Checksum Failure
+- Phase 0 / 001 — `cache-mismatch` — Cache Mismatch
+- Phase 0 / 002 — `author-field` — AUTHOR FIELD
+- Phase 0 / 003 — `first-breach` — The First Breach
+- Phase 1 / 000 — `arrival-naki-n4-k2` — Arrival 01: Naki / N4-K2
+- Phase 1 / 001 — `arrival-mako` — Arrival 02: Mako
+- Phase 1 / 002 — `arrival-james` — Arrival 03: James
+- Phase 1 / 003 — `arrival-doc-s-769769` — Arrival 04: Doc / S-769769
+- Phase 1 / 004 — `arrival-scarf` — Arrival 05: Scarf
+- Phase 1 / 005 — `arrival-ivan` — Arrival 06: Ivan
+- Phase 1 / 006 — `arrival-markov` — Arrival 07: Markov
+- Phase 1 / 007 — `arrival-amy` — Arrival 08: Amy
+- Phase 1 / 008 — `arrival-isaac` — Arrival 09: Isaac
+- Phase 1 / 009 — `arrival-fear` — Arrival 10: Fear
+- Phase 1 / 010 — `arrival-zucchi` — Arrival 11: Zucchi
+- Phase 1 / 011 — `arrival-blurb` — Arrival 12: Blurb
+- Phase 1 / 012 — `arrival-joel` — Arrival 13: Joel
+- Phase 1 / 013 — `arrival-blade` — Arrival 14: Blade
+- Phase 1 / 014 — `arrival-lime` — Arrival 15: Lime
+- Phase 1 / 015 — `arrival-aztec` — Arrival 16: Aztec
+- Phase 1 / 016 — `arrival-diamond` — Arrival 17: Diamond
+- Phase 1 / 017 — `arrival-sododa` — Arrival 18: Sododa
+- Phase 1 / 018 — `arrival-polar` — Arrival 19: Polar
+- Phase 1 / 019 — `arrival-redsky` — Arrival 20: Redsky
+- Phase 1 / 020 — `arrival-raine` — Arrival 21: Raine
+- Phase 1 / 021 — `arrival-deniy` — Arrival 22: Deniy
+- Phase 1 / 022 — `arrival-grotti` — Arrival 23: Grotti
+- Phase 1 / 023 — `arrival-vesta` — Arrival 24: Vesta
+- Phase 1 / 024 — `arrival-emily-nanacea` — Arrival 25: Emily Nanacea
+- Phase 2 / 000 — `jonathan-yaryan` — Jonathan Yaryan / Nawkies
+- Phase 2 / 001 — `stephanie-e` — Stephanie E.
+- Phase 2 / 002 — `jason-w` — Jason W.
+- Phase 2 / 003 — `amy-m` — Amy M.
+- Phase 2 / 004 — `shadow` — Shadow
+- Phase 2 / 005 — `scout` — Scout
+- Phase 2 / 006 — `house-rules` — House Rules
+- Phase 2 / 007 — `night-one` — Night One
+- Phase 2 / 008 — `family-photo` — The Family Photo That Would Not Save
+- Phase 2 / 009 — `morning-two` — Morning Two
+- Phase 3 / 000 — `the-character-bible` — The Character Bible
+- Phase 3 / 001 — `naki-reads-naki` — Naki Reads Naki
+- Phase 3 / 002 — `blade-reads-the-arrow` — Blade Reads the Arrow
+- Phase 3 / 003 — `mako-reads-household` — Mako Reads the Household
+- Phase 3 / 004 — `fear-reads-guardrail` — Fear Reads the Guardrail
+- Phase 3 / 005 — `diamond-reads-device` — Diamond Reads the Device Note
+- Phase 3 / 006 — `ivan-reads-incident` — Ivan Reads the Incident
+- Phase 3 / 007 — `emily-reads-opposition` — Emily Reads 'Opposition'
+- Phase 3 / 008 — `deleted-scenes` — Deleted Scenes
+- Phase 3 / 009 — `author-on-trial` — The Author on Trial
+- Phase 4 / 000 — `no-records` — No Records
+- Phase 4 / 001 — `first-rain` — The First Rain
+- Phase 4 / 002 — `grocery-problem` — The Grocery Problem
+- Phase 4 / 003 — `internet-searches` — Search Results
+- Phase 4 / 004 — `zucchi-sketches` — Zucchi's Sketches
+- Phase 4 / 005 — `prank-war-reality` — The Prank War Meets a Real House
+- Phase 4 / 006 — `law-without-jurisdiction` — Law Without Jurisdiction
+- Phase 4 / 007 — `cats-and-doors` — Cats and Doors
+- Phase 4 / 008 — `safe-scene` — Jonathan Tries to Write a Safe Scene
+- Phase 4 / 009 — `not-their-sky` — Not Their Sky
+- Phase 5 / 000 — `first-forgetting` — The First Forgetting
+- Phase 5 / 001 — `names-fade` — Names Fade First
+- Phase 5 / 002 — `site-as-anchor` — The Site as Anchor
+- Phase 5 / 003 — `shadow-remembers` — Shadow Remembers
+- Phase 5 / 004 — `twenty-five-voices` — Twenty-Five Voices
+- Phase 5 / 005 — `jonathan-keeps-writing` — Jonathan Keeps Writing
+- Phase 5 / 006 — `amy-and-amy` — Amy M. and Amy
+- Phase 5 / 007 — `naki-flickers` — Naki Flickers
+- Phase 5 / 008 — `empty-chair-protocol` — The Empty Chair Protocol
+- Phase 5 / 009 — `not-a-backup` — Not a Backup
+- Phase 5 / 010 — `signal-zero` — Signal Approaches Zero
+- Phase 6 / 000 — `the-vote` — The Vote
+- Phase 6 / 001 — `naki-blade-choice` — Naki and Blade
+- Phase 6 / 002 — `mako-household-choice` — Mako, Markov, and Amy
+- Phase 6 / 003 — `close-circle-choice` — The Close Circle
+- Phase 6 / 004 — `prank-war-choice` — The Prank-War Group
+- Phase 6 / 005 — `court-choice` — Lime, Aztec, Diamond, Emily
+- Phase 6 / 006 — `ivan-choice` — Ivan
+- Phase 6 / 007 — `family-choice` — Jonathan and His Family
+- Phase 6 / 008 — `cats-choice` — Shadow and Scout
+- Phase 6 / 009 — `third-answer` — The Third Answer
+- Phase 7 / 000 — `last-night` — The Last Night in the House
+- Phase 7 / 001 — `goodbyes` — Goodbyes
+- Phase 7 / 002 — `return-protocol` — Return Protocol
+- Phase 7 / 003 — `empty-room` — The Empty Room
+- Phase 7 / 004 — `family-after` — The Family After
+- Phase 7 / 005 — `ending-stay` — ENDING A // STAY
+- Phase 7 / 006 — `ending-return` — ENDING B // RETURN
+- Phase 7 / 007 — `true-ending` — ENDING C // THE DOOR
+- Phase 7 / 009 — `letter-naki-n4-k2` — Letter 01: Naki / N4-K2
+- Phase 7 / 010 — `letter-mako` — Letter 02: Mako
+- Phase 7 / 011 — `letter-james` — Letter 03: James
+- Phase 7 / 012 — `letter-doc-s-769769` — Letter 04: Doc / S-769769
+- Phase 7 / 013 — `letter-scarf` — Letter 05: Scarf
+- Phase 7 / 014 — `letter-ivan` — Letter 06: Ivan
+- Phase 7 / 015 — `letter-markov` — Letter 07: Markov
+- Phase 7 / 016 — `letter-amy` — Letter 08: Amy
+- Phase 7 / 017 — `letter-isaac` — Letter 09: Isaac
+- Phase 7 / 018 — `letter-fear` — Letter 10: Fear
+- Phase 7 / 019 — `letter-zucchi` — Letter 11: Zucchi
+- Phase 7 / 020 — `letter-blurb` — Letter 12: Blurb
+- Phase 7 / 021 — `letter-joel` — Letter 13: Joel
+- Phase 7 / 022 — `letter-blade` — Letter 14: Blade
+- Phase 7 / 023 — `letter-lime` — Letter 15: Lime
+- Phase 7 / 024 — `letter-aztec` — Letter 16: Aztec
+- Phase 7 / 025 — `letter-diamond` — Letter 17: Diamond
+- Phase 7 / 026 — `letter-sododa` — Letter 18: Sododa
+- Phase 7 / 027 — `letter-polar` — Letter 19: Polar
+- Phase 7 / 028 — `letter-redsky` — Letter 20: Redsky
+- Phase 7 / 029 — `letter-raine` — Letter 21: Raine
+- Phase 7 / 030 — `letter-deniy` — Letter 22: Deniy
+- Phase 7 / 031 — `letter-grotti` — Letter 23: Grotti
+- Phase 7 / 032 — `letter-vesta` — Letter 24: Vesta
+- Phase 7 / 033 — `letter-emily-nanacea` — Letter 25: Emily Nanacea
+- Phase 7 / 034 — `witness-jonathan` — Jonathan's Unsent Note
+- Phase 7 / 035 — `witness-stephanie` — Stephanie E.: The Folded Blanket
+- Phase 7 / 036 — `witness-jason` — Jason W.: Protocol Revision 4
+- Phase 7 / 037 — `witness-amy-m` — Amy M.: Two Names
+- Phase 7 / 038 — `witness-shadow` — Shadow: Hallway Log
+- Phase 7 / 039 — `witness-scout` — Scout: The Door Opens Once
+- Phase 7 / 040 — `postscript` — Postscript: 0.0001%
+- Phase 7 / 091 — `ending-ivan-household-collapse` — ENDING D // HOUSEHOLD COLLAPSE
+- Phase 7 / 092 — `ending-ivan-aftermath` — AFTERMATH // Six Empty Places
+- Phase 8 / 000 — `mirror-index` — MIRROR INDEX
+- Phase 8 / 001 — `mirror-naki` — MIRROR: Naki Never Arrived First
+- Phase 8 / 002 — `mirror-mako` — MIRROR: Mako's Missing Minute
+- Phase 8 / 003 — `mirror-amy` — MIRROR: The Amy Who Wasn't There
+- Phase 8 / 004 — `mirror-ivan` — MIRROR: Ivan Without the Incident
+- Phase 8 / 005 — `mirror-core` — MIRROR CORE
+- Phase 8 / 090 — `false-mercy-version` — MERCY_VERSION
+- Phase 9 / 000 — `remnant-index` — REMNANT INDEX
+- Phase 9 / 001 — `remnant-names` — Names Removed Correctly
+- Phase 9 / 002 — `remnant-ghost-dialogue` — Ghost Dialogue
+- Phase 9 / 003 — `remnant-bible-redlines` — The Redlines Are Fossils
+- Phase 9 / 004 — `remnant-blank-page` — The Blank Page
+- Phase 9 / 005 — `remnant-core` — REMNANT CORE
+- Phase 9 / 090 — `false-perfect-family` — PERFECT FAMILY VERSION
+- Phase 10 / 000 — `witness-index` — WITNESS INDEX
+- Phase 10 / 001 — `shadow-log-2` — Shadow Log 2
+- Phase 10 / 002 — `scout-log-3` — Scout Log 3
+- Phase 10 / 003 — `amy-m-crosscheck` — Amy M. Crosscheck
+- Phase 10 / 004 — `jason-redundancy` — Jason W. Redundancy Test
+- Phase 10 / 005 — `stephanie-name-test` — Stephanie E. Name Test
+- Phase 10 / 006 — `witness-core` — WITNESS CORE
+- Phase 11 / 000 — `null-index` — NULL INDEX
+- Phase 11 / 001 — `null-author` — NULL: AUTHOR
+- Phase 11 / 002 — `null-reader` — NULL: READER
+- Phase 11 / 003 — `null-gap` — NULL: The Gap Remembers
+- Phase 11 / 004 — `null-no-author` — NULL: No Author Found
+- Phase 11 / 005 — `null-core` — NULL CORE
+- Phase 12 / 000 — `root-cause-1` — ROOT // The Story Did Not Escape
+- Phase 12 / 001 — `root-cause-2` — ROOT // Why Jonathan
+- Phase 12 / 002 — `root-cause-3` — ROOT // Why the Family
+- Phase 12 / 003 — `root-cause-4` — ROOT // Why the Cats
+- Phase 12 / 004 — `root-cause-5` — ROOT // The Noise
+- Phase 12 / 005 — `root-cause-6` — ROOT // Final Reconstruction
+- Phase 12 / 006 — `root-epilogue` — ROOT // Epilogue
+- Phase 12 / 090 — `false-noise-free` — NOISE-FREE BUILD
+- Phase 13 / 000 — `entry-acrostic` — ENTRY 01 // First Letters
+- Phase 13 / 001 — `entry-caesar` — ENTRY 02 // Shift Three
+- Phase 13 / 002 — `entry-base64` — ENTRY 03 // Encoded Name
+- Phase 13 / 003 — `entry-binary` — ENTRY 04 // Eight Bits
+- Phase 13 / 004 — `entry-hex` — ENTRY 05 // Hex Pair
+- Phase 13 / 005 — `entry-reverse` — ENTRY 06 // Backward
+- Phase 13 / 006 — `entry-count` — ENTRY 07 // Dossier Count
+- Phase 13 / 007 — `entry-cats` — ENTRY 08 // Siblings
+- Phase 13 / 008 — `entry-final` — ENTRY 09 // Beginner Gate
+- Phase 13 / 050 — `entry-lore-reward` — ENTRY REWARD // The Archive Teaches
+- Phase 14 / 000 — `house-timeline` — HOUSE 01 // Missing Minute
+- Phase 14 / 001 — `house-index-cipher` — HOUSE 02 // Cat Index
+- Phase 14 / 002 — `house-pairs` — HOUSE 03 // Pair the Witnesses
+- Phase 14 / 003 — `house-clock` — HOUSE 04 // Eleven Seconds
+- Phase 14 / 004 — `house-two-amys` — HOUSE 05 // Name Collision
+- Phase 14 / 005 — `house-cat-binary` — HOUSE 06 // Scout Pattern
+- Phase 14 / 006 — `house-first-last` — HOUSE 07 // Names at the Edges
+- Phase 14 / 007 — `house-vigenere` — HOUSE 08 // Scout Key
+- Phase 14 / 008 — `house-gate` — HOUSE 09 // Household Gate
+- Phase 14 / 050 — `house-lore-reward` — HOUSE REWARD // Recognition Before Classification
+- Phase 15 / 000 — `lattice-primes` — LATTICE 01 // Prime Dossiers
+- Phase 15 / 001 — `lattice-shift` — LATTICE 02 // Close-Circle Shift
+- Phase 15 / 002 — `lattice-relationship` — LATTICE 03 // Relationship Arrow
+- Phase 15 / 003 — `lattice-truth` — LATTICE 04 // Species Truth Table
+- Phase 15 / 004 — `lattice-anagram` — LATTICE 05 // Rearranged Witness
+- Phase 15 / 005 — `lattice-column` — LATTICE 06 // Edge Grid
+- Phase 15 / 006 — `lattice-xor` — LATTICE 07 // XOR
+- Phase 15 / 007 — `lattice-hash` — LATTICE 08 // Hash Prefix
+- Phase 15 / 008 — `lattice-gate` — LATTICE 09 // Character Gate
+- Phase 15 / 050 — `lattice-lore-reward` — LATTICE REWARD // The Bible Is a Graph
+- Phase 16 / 000 — `protocol-contradiction` — PROTOCOL 01 // Contradiction Set
+- Phase 16 / 001 — `protocol-majority` — PROTOCOL 02 // Witness Majority
+- Phase 16 / 002 — `protocol-order` — PROTOCOL 03 // Correct Procedure
+- Phase 16 / 003 — `protocol-absolute` — PROTOCOL 04 // Absolute Claim
+- Phase 16 / 004 — `protocol-rail` — PROTOCOL 05 // Two Rails
+- Phase 16 / 005 — `protocol-affine` — PROTOCOL 06 // Affine
+- Phase 16 / 006 — `protocol-grid` — PROTOCOL 07 // Coordinate Grid
+- Phase 16 / 007 — `protocol-book` — PROTOCOL 08 // Dossier Book Cipher
+- Phase 16 / 008 — `protocol-gate` — PROTOCOL 09 // Maze Exit
+- Phase 16 / 050 — `protocol-lore-reward` — PROTOCOL REWARD // Truth Is Weighted
+- Phase 17 / 000 — `noise-whitespace` — NOISE 01 // Whitespace
+- Phase 17 / 001 — `noise-frequency` — NOISE 02 // Frequency
+- Phase 17 / 002 — `noise-bacon` — NOISE 03 // Bacon
+- Phase 17 / 003 — `noise-vigenere` — NOISE 04 // Long Vigenere
+- Phase 17 / 004 — `noise-columnar` — NOISE 05 // Four Columns
+- Phase 17 / 005 — `noise-modular` — NOISE 06 // Modular Index
+- Phase 17 / 006 — `noise-crosslayer` — NOISE 07 // Cross-Layer
+- Phase 17 / 007 — `noise-semantic` — NOISE 08 // No Mechanical Answer
+- Phase 17 / 008 — `noise-meta` — NOISE 09 // Forty-Five
+- Phase 17 / 050 — `noise-engine-reward` — NOISE ENGINE // Consensus Meter

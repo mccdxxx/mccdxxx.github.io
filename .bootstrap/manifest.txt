@@ -4,3 +4,4 @@ encoding=base64
 compression=xz
 archive=tar
 expected-files=588
+trigger=final-push

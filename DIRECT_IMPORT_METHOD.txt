@@ -1,0 +1,1 @@
+Method: temporary transport is used only to deliver bytes to GitHub; final main branch contains the normal Jekyll source tree directly. No bootstrap payload or reconstruction workflow remains after completion.

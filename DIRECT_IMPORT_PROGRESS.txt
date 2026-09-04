@@ -1,0 +1,1 @@
+Preparing direct source commit. No bootstrap archive will remain in the final repository.

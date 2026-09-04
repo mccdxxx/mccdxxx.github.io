@@ -1,0 +1,6 @@
+bootstrap-version=1
+parts=5
+encoding=base64
+compression=xz
+archive=tar
+expected-files=588

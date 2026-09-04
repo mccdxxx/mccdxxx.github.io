@@ -1,0 +1,69 @@
+title: "Naki // N4-K2"
+description: "Developer, gamer, storyteller, worldbuilder, modder, and mapper/puzzle designer."
+url: "https://n4k2i.github.io"
+baseurl: "/about-naki.github.io"
+markdown: kramdown
+permalink: pretty
+collections:
+  characters:
+    output: true
+    permalink: /characters/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  docs:
+    output: true
+    permalink: /docs/:name/
+  lore:
+    output: true
+    permalink: /lore/:name/
+  roadmaps:
+    output: true
+    permalink: /roadmaps/:name/
+  species:
+    output: true
+    permalink: /species/:name/
+  tahaufya_bible:
+    output: true
+    permalink: /tahaufya-bible/:name/
+  writing:
+    output: true
+    permalink: /writing/:name/
+  galleries:
+    output: true
+    permalink: /galleries/:name/
+  changelogs:
+    output: true
+    permalink: /changelog/:name/
+  arg:
+    output: true
+    permalink: /signal/:name/
+  arg_mature:
+    output: true
+    permalink: /signal-mature/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: arg
+    values:
+      layout: arg-record
+      sitemap: false
+  - scope:
+      path: ""
+      type: arg_mature
+    values:
+      layout: arg-record
+      sitemap: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PRIVACY.md
+  - vendor
+  - .bundle
+  - .github
+  - DIRECT_IMPORT_NOTICE.md

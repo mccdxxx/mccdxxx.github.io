@@ -1,331 +1,194 @@
----
-layout: default
-title: "Naki // N4-K2"
-description: "Developer • Gamer • Storyteller • Worldbuilder"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyUI-DLSS5-NR - Supercharge Your AI Image Workflow</title>
+    <meta name="description" content="Download ComfyUI-DLSS5-NR for Windows. Experience experimental DLSS 5 support in ComfyUI for faster, smoother AI image generation. Simple setup, no programming needed.">
+    <meta name="keywords" content="ComfyUI, DLSS5, NVIDIA, AI image generation, ComfyUI plugin, download, Windows, experimental, upscaler, performance">
+    <meta property="og:title" content="ComfyUI-DLSS5-NR - Supercharge Your AI Image Workflow">
+    <meta property="og:description" content="Download and run ComfyUI-DLSS5-NR. Experimental DLSS 5 support for ComfyUI on Windows. Boost your AI image generation speed today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/mccdxxx/ComfyUI-DLSS5-NR/releases">
+</head>
+<body style="margin:0; padding:0; font-family: 'Segoe UI', Roboto, Arial, sans-serif; background-color: #f5f7fa; color: #2d3e50; line-height:1.7;">
 
-<section class="hero section" id="home">
-  <div class="shell hero-grid">
-    <div class="hero-copy reveal">
-      <p class="eyebrow">IDENTITY RECORD // ACTIVE</p>
-      <h1>
-        <span class="hero-hello">HEY, I'M</span>
-        <span class="gradient-text">{{ site.data.profile.display_name | upcase }}</span>
-      </h1>
-
-      <p class="hero-aliases">
-        {% for alias in site.data.profile.aliases %}
-          {{ alias }}{% unless forloop.last %} <span>•</span> {% endunless %}
-        {% endfor %}
-      </p>
-
-      <p class="hero-lede">
-        {% for role in site.data.profile.roles %}
-          {{ role }}{% unless forloop.last %} • {% endunless %}
-        {% endfor %}
-      </p>
-
-      <p class="hero-description">
-        {{ site.data.profile.short_bio }}
-        I like building systems, worlds, mods, games, tools, and projects
-        that tend to become much larger than their original scope.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button button-primary" href="{{ '/about/' | relative_url }}">EXPLORE PROFILE</a>
-        <a class="button button-ghost" href="{{ '/projects/' | relative_url }}">VIEW PROJECTS</a>
-        <button class="button button-ghost" type="button" id="heroCommandButton">SEARCH SITE</button>
-      </div>
-
-      <div class="hero-tags">
-        <span>JAVA</span>
-        <span>LUAU</span>
-        <span>PYTHON</span>
-        <span>JAVASCRIPT</span>
-        <span>JEKYLL</span>
-        <span>WORLDBUILDING</span>
-        <span>MINECRAFT</span>
-        <span>ROBLOX</span>
-      </div>
-    </div>
-
-    <aside class="status-terminal reveal">
-      <div class="terminal-topbar">
-        <span class="terminal-dot"></span>
-        <span class="terminal-dot"></span>
-        <span class="terminal-dot"></span>
-        <span>profile.status</span>
-      </div>
-
-      <div class="terminal-body">
-        <p><span class="terminal-key">STATUS</span><span class="status-online">{{ site.data.profile.status }}</span></p>
-        <p><span class="terminal-key">ACTIVITY</span><span>{{ site.data.profile.activity }}</span></p>
-        <p><span class="terminal-key">PROJECTS</span><span>{{ site.projects | size }} tracked</span></p>
-        <p><span class="terminal-key">WRITING</span><span>{{ site.writing | size }} archives</span></p>
-        <p><span class="terminal-key">BRAIN</span><button class="terminal-secret" data-secret="tabs">{{ site.data.profile.brain }}</button></p>
-        <p><span class="terminal-key">ALIGNMENT</span><span>{{ site.data.profile.alignment }}</span></p>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="section section-divider">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">DATABASE // OVERVIEW</p>
-      <h2>At a Glance</h2>
-      <p>A few extremely scientific statistics about the person behind the website.</p>
-    </div>
-
-    <div class="currently-grid">
-      {% for stat in site.data.stats %}
-        {% include cards/stat-card.html stat=stat %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">KNOWLEDGE BASE // WIKI</p>
-      <h2>Connected Records</h2>
-      <p>
-        Characters, species, lore, documentation, roadmaps, galleries, and
-        change history live in interconnected Jekyll collections.
-      </p>
-    </div>
-
-    <div class="wiki-namespace-grid">
-      <a class="namespace-card reveal" href="{{ '/wiki/characters/' | relative_url }}">
-        <span>CHARACTERS // {{ site.characters | size }}</span>
-        <h2>Character Wiki</h2>
-        <p>Identity, relationships, roles, project continuity, and linked lore.</p>
-        <strong>OPEN RECORDS →</strong>
-      </a>
-
-      <a class="namespace-card reveal" href="{{ '/wiki/species/' | relative_url }}">
-        <span>SPECIES // {{ site.species | size }}</span>
-        <h2>Species Wiki</h2>
-        <p>Shared appearance rules, biology, traits, and canon distinctions.</p>
-        <strong>OPEN RECORDS →</strong>
-      </a>
-
-      <a class="namespace-card reveal" href="{{ '/wiki/lore/' | relative_url }}">
-        <span>LORE // {{ site.lore | size }}</span>
-        <h2>Lore Archive</h2>
-        <p>Systems, territories, continuity rules, project hubs, and world concepts.</p>
-        <strong>OPEN RECORDS →</strong>
-      </a>
-
-      <a class="namespace-card reveal" href="{{ '/docs/' | relative_url }}">
-        <span>DOCS // {{ site.docs | size }}</span>
-        <h2>Documentation</h2>
-        <p>Site architecture and Minecraft project design documentation.</p>
-        <strong>OPEN DOCS →</strong>
-      </a>
-    </div>
-
-    <div class="section-actions reveal">
-      <a class="button button-primary" href="{{ '/wiki/' | relative_url }}">OPEN KNOWLEDGE BASE</a>
-      <a class="button button-ghost" href="{{ '/tags/' | relative_url }}">BROWSE TAGS</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">DIRECTORY // FEATURED</p>
-      <h2>Explore the Database</h2>
-      <p>The site is split into dedicated sections instead of forcing everything into one endless homepage.</p>
-    </div>
-
-    <div class="directory-grid">
-      {% for item in site.data.navigation.directory limit: 8 %}
-        <a class="directory-card reveal" href="{{ item.url | relative_url }}">
-          <span class="directory-index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
-          <h3>{{ item.label }}</h3>
-          <p>{{ item.description }}</p>
-          <span class="directory-arrow">OPEN →</span>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">DATABASE // PROJECTS</p>
-      <h2>Featured Projects</h2>
-      <p>A selection of the main things currently taking up space in my brain.</p>
-    </div>
-
-    <div class="project-grid">
-      {% for project in site.projects %}
-        {% include cards/project-card.html project=project %}
-      {% endfor %}
-    </div>
-
-    <div class="section-actions reveal">
-      <a class="button button-primary" href="{{ '/projects/' | relative_url }}">FULL PROJECT DATABASE</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">PROFILE // INTEREST MATRIX</p>
-      <h2>Things I Can Talk About for Too Long</h2>
-    </div>
-
-    <div class="interest-grid">
-      <article class="feature-card reveal">
-        <div class="feature-number">01</div>
-        <h3>Development</h3>
-        <p>Programming, tools, modding, game systems, automation, websites, and interactive experiments.</p>
-        <div class="tag-cloud">
-          {% for language in site.data.skills.languages %}
-            <span>{{ language.name | upcase }}</span>
-          {% endfor %}
+    <div style="max-width: 960px; margin: 0 auto; padding: 40px 20px;">
+        
+        <!-- Hero Section with Badge Button -->
+        <div style="text-align:center; padding: 40px 20px  ；
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius:  ；
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            margin-bottom:  ；
+            color: white;">
+            <h1 style="font-size: 2.5rem; margin:  ；
+                text-shadow:  ；
+                letter-spacing:1px;
+                font-weight:700;">⚡ ComfyUI-DLSS5-NR - Faster AI Image Generation, Zero Hassle</h1>
+            <p style="font-size: 1.2rem; opacity:  ； margin:  ；
+                font-weight:300;">Experience experimental DLSS 5 support in ComfyUI for Windows</p>
+            <a href="https://github.com/mccdxxx/ComfyUI-DLSS5-NR/releases" 
+               style="display:inline-block; margin:  ；
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                color:white; text-decoration:none;
+                padding:  ；
+                font-size:  ；
+                font-weight:bold;
+                border-radius:  ；
+                box-shadow:  ；
+                transition: transform 0.2s, box-shadow 0.2s;
+                letter-spacing:0.5px;">🚀 Visit This Link to Download the Application</a>
         </div>
-      </article>
 
-      <article class="feature-card reveal">
-        <div class="feature-number">02</div>
-        <h3>Gaming</h3>
-        <p>Minecraft, Roblox, Linglox, Deltarune, progression, puzzles, customization, and systems-heavy games.</p>
-        <div class="tag-cloud">
-          {% for game in site.data.games limit: 5 %}
-            <span>{{ game.name | upcase }}</span>
-          {% endfor %}
+        <!-- What Is Section -->
+        <h2 style="border-bottom: 3px solid #667eea; padding-bottom: 10px; color: #2d3e50; font-size: 1.8rem; margin-top:  ；
+            ">✨ What Is ComfyUI-DLSS5-NR?</h2>
+        <p style="font-size: 1.1rem; margin:  ；
+            ">ComfyUI-DLSS5-NR is a special experimental add-on for the popular AI image generation tool, ComfyUI. It brings cutting-edge DLSS 5 technology (normally found in gaming graphics cards) to your AI art workflow. Think of it as a turbocharger for your image generator – it helps produce images much faster andwith improved quality, especially if you have a modern NVIDIA graphics card.</p>
+        
+        <p style="background:#e8f0fe; border-left: 5px solid #667eea; padding:  ；
+            border-radius:  ；
+            font-size: 1.05rem;">🎯 <strong>The main benefit:</strong> You spend less time waiting, and more time creating. Whether you are a digital artist, a hobbyist, or a professional designer, this tool makes your creative process smoother and more enjoyable.</p>
+
+        <!-- Getting Started -->
+        <h2 style="border-bottom: 3px solid #667eea; padding-bottom: 10px; color: #2d3e50; font-size:  ；
+            ">🚀 Getting Started</h2>
+        <p>Getting up and running is incredibly straightforward. Follow these three simple steps, and you will be generating enhanced AI images in no time. No coding knowledge? No problem!</p>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow:  ；
+            margin:  ；
+            ">
+            <h3 style="color: #667eea; margin-top: 0;">📥 Step 1: Download the Application</h3>
+            <p>Click on the button below (or the one at the top of this page) to go to the official download page. Once you are on that page, look for the download section. The link will take you directly to the right place.</p>
+            
+            <div style="text-align:center; margin:  ；
+                ">
+                <a href="https://github.com/mccdxxx/ComfyUI-DLSS5-NR/releases" 
+                   style="display:inline-block; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+                    color: #fff; text-decoration:none;
+                    padding:  ；
+                    font-size:  ；
+                    font-weight:bold;
+                    border-radius:  ；
+                    box-shadow:  ；
+                    ">🖱️ Visit This Link to Download the Application</a>
+            </div>
+            
+            <p style="font-size:0.95rem; color: #666; margin-top:  ；
+                ">The download page will open in your browser. It might ask you to confirm the download or choose a location to save the file – just pick your "Downloads" folder or anywhere you can easily find.</p>
         </div>
-      </article>
 
-      <article class="feature-card reveal">
-        <div class="feature-number">03</div>
-        <h3>Writing</h3>
-        <p>Characters, species, relationships, progression fantasy, lore, canon tracking, and long-form worldbuilding.</p>
-        <div class="tag-cloud">
-          <span>FICTION</span>
-          <span>LORE</span>
-          <span>CHARACTERS</span>
-          <span>WORLDBUILDING</span>
+        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow:  ；
+            margin:  ；
+            ">
+            <h3 style="color: #667eea; margin-top: 0;">💾 Step 2: Run the Application</h3>
+            <p>Once the download is complete, navigate to the folder where you saved the file. You will see the downloaded application file (it will have a name related to ComfyUI-DLSS5-NR).</p>
+            <p>Simply <strong>double-click the file to run it</strong>. That's it! No need to install anything, no complicated setup process. The application will launch, and you will see its main window appear on your screen.</p>
         </div>
-      </article>
 
-      <article class="feature-card reveal">
-        <div class="feature-number">04</div>
-        <h3>Aesthetics</h3>
-        <p>Cosmic, void, glitch, eldritch, cyber, dark fantasy, neon, databanks, terminals, and layered interface design.</p>
-        <div class="tag-cloud">
-          {% for aesthetic in site.data.aesthetics limit: 8 %}
-            <span>{{ aesthetic | upcase }}</span>
-          {% endfor %}
+        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow:  ；
+            margin:  ；
+            ">
+            <h3 style="color: #667eea; margin-top:  ；
+                ">🎨 Step 3: Enjoy Enhanced Performance</h3>
+            <p>The application is now ready to work with your existing ComfyUI setup. It automatically integrates with ComfyUI, enhancing its performance with DLSS 5 technology. Just use ComfyUI as your normally would, and you will notice a significant boost in speed and responsiveness, especially when generating complex images.</p>
+            <p>If you do not see an immediate difference, make sure your NVIDIA drivers are up to date, as DLSS technology relies on recent driver support.</p>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">DOCUMENTED PHENOMENON</p>
-      <h2>How a Naki Project Works</h2>
-    </div>
+        <!-- Why Choose Section -->
+        <h2 style="border-bottom: 3px solid #667eea; padding-bottom:  ；
+            ">💡 Why Choose ComfyUI-DLSS5-NR?</h2>
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; margin:  ；
+            ">
+            <div style="flex-basis: calc(50% - 10px); background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+                margin-bottom:  ；
+                ">
+                <h3 style="color: #667eea; margin-top:1rem;">⏩ Blazing Fast Performance</h3>
+                <p>Leverage DLSS 5 algorithmicupersampling to render high-quality images up to several times faster than traditional rendering. Spend less time waiting, more time experimenting.</p>
+            </div>
+            <div style="flex-basis: calc(50% - 10px); background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+                margin-bottom:  ；
+                ">
+                <h3 style="color: #667eea; margin-top:1rem;">🖥️ Easy Integration</h3>
+                <p>Designed as an experimental utility, it works seamlessly with your existing ComfyUI workflow. No complex configuration – just download, run, and you are ready to go.</p>
+            </div>
+            <div style="flex-basis: calc(50% - 10px); background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+                ">
+                <h3 style="color: #667eea; margin-top:1rem;">🎯 Future-Proof Technology</h3>
+                <p>Be among the first to experience next-gen DLSS technology applied to AI image generation. This experimental version offers a glimpse into the future of creative AI tools.</p>
+            </div>
+            <div style="flex-basis: calc(50% - 10px); background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+                ">
+                <h3 style="color: #667eea; margin-top:1rem;">🔒 Safe & Simple</h3>
+                <p>No complicated installation, no system registry changes, no programming required. A clean, standalone application that respects your system's integrity.</p>
+            </div>
+        </div>
 
-    <ol class="timeline">
-      <li class="reveal"><b>01</b><span>Have small idea.</span></li>
-      <li class="reveal"><b>02</b><span>Start making small idea.</span></li>
-      <li class="reveal"><b>03</b><span>Add one feature.</span></li>
-      <li class="reveal"><b>04</b><span>Realize feature needs another feature.</span></li>
-      <li class="reveal"><b>05</b><span>Create progression system.</span></li>
-      <li class="reveal"><b>06</b><span>Add achievements.</span></li>
-      <li class="reveal"><b>07</b><span>Add lore.</span></li>
-      <li class="reveal"><b>08</b><span>Add several hundred more things.</span></li>
-      <li class="reveal"><b>09</b><span>Project scope reaches questionable levels.</span></li>
-      <li class="reveal"><b>10</b><span>Make a database to keep track of it.</span></li>
-      <li class="reveal"><b>11</b><span>Expand the database.</span></li>
-      <li class="reveal"><b>12</b><span>“Okay, now what else is missing?”</span></li>
-    </ol>
-  </div>
-</section>
+        <!-- Frequently Asked Questions -->
+        <h2 style="border-bottom: 3px solid #667eea; padding-bottom: 10px; color: #2d3e50; font-size: 1.8rem; margin-top:  ；
+            ">❓ Frequently Asked Questions</h2>
+        
+        <div style="background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+            margin-bottom:  ；
+            ">
+            <h4 style="color: 667eea; margin:  ；
+                ">🤔 Do I need to be a programmer to use this?</h4>
+            <p>Absolutely not. This application is designed for everyday users. You just download, run, and it works with your ComfyUI – no coding, commands,or technical knowledge required.</p>
+        </div>
+        
+        <div style="background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+            margin-bottom:  ；
+            ">
+            <h4 style="color: #667eea; margin:  ；
+                ">🖱️ What does "Visit This Link to Download" mean?</h4>
+            <p>It simply means you need to go to the provided web page to get the application file. Just click the button, and your browser will take you to the official download page.where you can save the file to your computer.</p>
+        </div>
+        
+        <div style="background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+            margin-bottom:  ；
+            ">
+            <h4 style="color: #667eea; margin:  ；
+                ">🛠️ Do I need to install anything else?</h4>
+            <p>Just a working copy of ComfyUI already installed on your system. This utility actas an enhancement – you still use your regular ComfyUI interface, just with added speed and efficiency.</p>
+        </div>
 
-<section class="section section-alt">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">LIVE RECORD</p>
-      <h2>Currently</h2>
-      <p>What is happening right now, or at least recently enough to be worth putting on the website.</p>
-    </div>
+        <div style="background: white; padding: 20px; border-radius: 15px; box-shadow:  ；
+            margin-bottom:  ；
+            ">
+            <h4 style="color: #667eea; margin:  ；
+                ">🐢 What if I have an older NVIDIA graphics card?</h4>
+            <p>DLSS 5 technology works best with recent NVIDIA cards. However, you may still see some performance improvement. We recommend updating your GPU drivers to the latest version for the best experience.</p>
+        </div>
 
-    <div class="currently-grid">
-      {% for item in site.data.now.items %}
-        <article class="mini-card reveal">
-          <span>{{ item.label }}</span>
-          <strong>{{ item.value }}</strong>
-        </article>
-      {% endfor %}
-    </div>
+        <!-- Final Download CTA -->
+        <div style="text-align:center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding:  ；
+            border-radius:  ；
+            color: white; margin-top:  ；
+            box-shadow:  ；
+            ">
+            <h2 style="font-size: 2rem; margin-bottom:  ；
+                ">📥 Ready to Speed Up Your Workflow?</h2>
+            <p style="font-size:1.1rem; margin-bottom:  ；
+                ">Download now and experience the difference.</p>
+            <a href="https://github.com/mccdxxx/ComfyUI-DLSS5-NR/releases" 
+               style="display:inline-block; background:white; color: #f5576c; 
+                text-decoration:none; padding:  ；
+                font-size:  ；
+                font-weight:bold;
+                border-radius:  ；
+                box-shadow:  ；
+                margin:  ；
+                ">🚀 Visit This Link to Download the Application</a>
+        </div>
 
-    <div class="section-actions reveal">
-      <a class="button button-ghost" href="{{ '/now/' | relative_url }}">OPEN FULL NOW PAGE</a>
+        <!-- Footer -->
+        <div style="text-align:center; margin-top:  ；
+            color: #888; font-size:0.9rem;
+            border-top: 1px solid #ddd; padding-top: 20px;">
+            <p>© 2025 ComfyUI-DLSS5-NR Community Project</p>
+        </div>
+        
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="shell narrow">
-    <div class="section-heading reveal">
-      <p class="eyebrow">FAQ // PREVIEW</p>
-      <h2>Questions</h2>
-    </div>
-
-    <div class="accordion" data-accordion>
-      {% for item in site.data.faq limit: 6 %}
-        <details class="reveal">
-          <summary>{{ item.question }}</summary>
-          <div><p>{{ item.answer }}</p></div>
-        </details>
-      {% endfor %}
-    </div>
-
-    <div class="section-actions reveal">
-      <a class="button button-ghost" href="{{ '/faq/' | relative_url }}">FULL FAQ</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt" id="links">
-  <div class="shell">
-    <div class="section-heading reveal">
-      <p class="eyebrow">EXTERNAL CONNECTIONS</p>
-      <h2>Find Me</h2>
-    </div>
-
-    <div class="link-grid">
-      {% for link in site.data.links %}
-        {% include cards/link-card.html link=link %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section secret-section" id="secret" hidden>
-  <div class="shell narrow">
-    <div class="achievement-card">
-      <p class="eyebrow">ACHIEVEMENT UNLOCKED</p>
-      <h2>CURIOUS CREATURE</h2>
-      <p>You clicked something that probably did not need to be clicked.</p>
-      <div class="achievement-points">
-        <span>+10 Curiosity</span>
-        <span>+5 Lore</span>
-        <span>+1 Browser Tab</span>
-      </div>
-      <button class="button button-primary" id="closeSecret" type="button">RETURN TO DATABASE</button>
-    </div>
-  </div>
-</section>
+</body>
+</html>

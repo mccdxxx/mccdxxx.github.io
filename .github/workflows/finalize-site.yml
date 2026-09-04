@@ -16,23 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Diagnose and reconstruct payload
+      - name: Inspect payload archive prefix
         shell: bash
         run: |
           set -u
           cat .bootstrap/part-00 .bootstrap/part-01 .bootstrap/part-02 .bootstrap/part-03 > /tmp/site.b64
           base64 --decode /tmp/site.b64 > /tmp/site.partial.xz
-          mkdir -p /tmp/site
-          xz -dc /tmp/site.partial.xz > /tmp/site.partial.tar 2>/tmp/xz.err || true
-          echo "COMPRESSED_BYTES=$(wc -c < /tmp/site.partial.xz)"
-          echo "DECOMPRESSED_BYTES=$(wc -c < /tmp/site.partial.tar)"
-          cat /tmp/xz.err || true
-          tar -xf /tmp/site.partial.tar -C /tmp/site --ignore-zeros 2>/tmp/tar.err || true
-          echo "EXTRACTED_FILES=$(find /tmp/site -type f | wc -l)"
-          echo "LAST_PATHS:"
-          find /tmp/site -type f | sort | tail -20
-          echo "TAR_ERRORS:"
-          cat /tmp/tar.err || true
-          test "$(find /tmp/site -type f | wc -l)" -gt 0
+          xz -dc /tmp/site.partial.xz > /tmp/site.partial.tar 2>/dev/null || true
+          echo 'FIRST TAR ENTRIES:'
+          tar -tvf /tmp/site.partial.tar --ignore-zeros 2>/dev/null | head -35 || true
+          echo 'FIRST 512 TAR BYTES:'
+          head -c 512 /tmp/site.partial.tar | base64 -w0
+          echo
